@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 // eslint-disable-next-line import/namespace
-import { View, Text, FlatList, TouchableOpacity, Button } from 'react-native';
+import {
+    View,
+    Text,
+    FlatList,
+    TouchableOpacity,
+    Button,
+    TextInput,
+} from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { CartItem } from '../../components';
 import { confirmCart, removeItem } from '../../store/actions/cart.actions';
@@ -9,8 +16,6 @@ import { LocationSelector } from '../../components';
 // import { formatLocation } from '../../utils/formatLocation';
 import { URL_GEOCODING } from '../../utils/maps';
 
-// const adress = 'calle siempre viva 2256';
-
 const Cart = () => {
     const dispatch = useDispatch();
     const items = useSelector((state) => state.cart.items);
@@ -18,14 +23,18 @@ const Cart = () => {
     const disabledButton = total === 0;
     const [address, setAddress] = useState(null);
     const [location, setLocation] = useState(null);
+    const [changeLocation, setChangeLocation] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false);
 
     const onHandleDelete = (id) => {
         dispatch(removeItem(id));
     };
+    const onHandleModal = () => {
+        setModalVisible(!modalVisible);
+    };
 
     const onHandleConfirm = async () => {
         try {
-            await formatLocation(location);
             dispatch(confirmCart(items, total, address));
         } catch (error) {
             throw new Error('error parseando la location a una address');
@@ -57,6 +66,12 @@ const Cart = () => {
             throw new Error('error parseando la location a una address');
         }
     };
+    const onHandleChangeLocation = () => {
+        setChangeLocation(true);
+    };
+    const changeAddress=(text)=>{
+        setAddress(text);
+    }
 
     return (
         <View style={styles.container}>
@@ -70,22 +85,32 @@ const Cart = () => {
             <View>
                 {/* <Text></Text> */}
                 <LocationSelector onLocation={onHandleLocation} />
-                <Text>
+                <View style={styles}>
                     {address ? (
                         <View style={styles}>
-                            <Text>{address}</Text>
-                            <Button style={styles.buttonConfirm}
-                            title = "modificar direccion"
+                            <Text> direccion obtenida:{address}</Text>
+                            <Button
+                                style={styles.buttonConfirm}
+                                title="Agregar Manualmente"
+                                onPress={onHandleChangeLocation}
                             />
-                        
-                            
+                            {changeLocation ? (
+                                <View>
+                                    <TextInput
+                                        onChangeText={changeAddress}
+                                        placeholder={'address,city,state'}
+                                    ></TextInput>
+                                </View>
+                            ) : (
+                                <></>
+                            )}
                         </View>
                     ) : (
                         <View>
                             <Text>No se ha seleccionado direccion</Text>
                         </View>
                     )}
-                </Text>
+                </View>
             </View>
 
             <View style={styles.footer}>

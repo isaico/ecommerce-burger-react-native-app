@@ -12,6 +12,7 @@ const Product = ({ navigation }) => {
 
   const onHandleAddToCart = () => {
     dispatch(addItem(product));
+    
   };
   return (
     <View style={styles.container}>

@@ -11,7 +11,7 @@ const Orders = () => {
     const dispatch = useDispatch();
     const orders = useSelector((state) => state.order.orders);
     const items = orders;
-    console.log(items);
+   
 
     const onHandleDelete = (id) => {
         dispatch(deleteOrder(id));

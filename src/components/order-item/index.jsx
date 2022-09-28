@@ -32,7 +32,6 @@ const OrderItem = ({ item, onDelete }) => {
                             ))}
                     </Text>
                             <Text>Direccion:{item.address}</Text>
-                            <Text>{console.log("render de item",item)}</Text>
                 </View>
                 <View style={styles.detail}>
                     <Text style={styles.detailTotal}> {item.category}</Text>
