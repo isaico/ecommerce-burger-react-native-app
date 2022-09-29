@@ -17,7 +17,7 @@ export default function App() {
   });
 
   if (!loaded) {
-    return <ActivityIndicator size="large" color="#0000ff" />;
+    return <ActivityIndicator size="large" color="red" />;
   }
   return (
     <Provider store={store}>

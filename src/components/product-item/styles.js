@@ -8,11 +8,11 @@ export const styles = StyleSheet.create({
     flex: 1,
     borderRadius: 10,
     margin: 20,
-    height: 180,
+    height: 100,
   },
   containerTouchable: {
     flex: 1,
-    backgroundColor: isAndroid ? colors.secondary : colors.primary,
+    backgroundColor: isAndroid ? colors.tertiary : colors.primary,
     borderRadius: 10,
     shadowColor: colors.black,
     shadowOpacity: 0.26,
@@ -21,14 +21,15 @@ export const styles = StyleSheet.create({
     elevation: 3,
     justifyContent: "center",
     alignItems: "center",
-    padding: 10,
   },
+
   name: {
-    fontSize: 14,
+    fontSize: 16,
     fontFamily: "Lato-Bold",
   },
   price: {
-    fontSize: 15,
+    fontSize: 14,
+    paddingVertical:10,
     fontFamily: "Lato-Regular",
   },
   weight: {

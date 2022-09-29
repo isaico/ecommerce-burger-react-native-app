@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 const ShopNavigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Categories"
+      initialRouteName="Categorias"
       screenOptions={{
         headerStyle: {
           backgroundColor: isIOS ? colors.primary : colors.secondary,

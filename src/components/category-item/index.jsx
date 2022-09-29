@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
-
 import { styles } from "./styles";
+import { FontAwesome5 } from '@expo/vector-icons'; 
+import { colors } from "../../constants/colors";
 
 const CategoryItem = ({ item, onSelected }) => {
   return (
@@ -10,7 +11,8 @@ const CategoryItem = ({ item, onSelected }) => {
         style={{ ...styles.containerTouchable, backgroundColor: item.color }}
         onPress={() => onSelected(item)}
       >
-        <View>
+        <View style={styles.label}>
+          <FontAwesome5 name="hamburger" size={24} color={colors.tertiary} />
           <Text style={styles.name}>{item.name}</Text>
         </View>
       </TouchableOpacity>

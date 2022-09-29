@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     borderRadius: 10,
     margin: 20,
-    height: 190,
+    height: 150,
   },
   containerTouchable: {
     flex: 1,
@@ -25,5 +25,10 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontFamily: "Lato-Bold",
     color: colors.text,
+    marginLeft:20
   },
+  label:{
+    flexDirection: "row",
+    justifyContent:"center"
+  }
 });

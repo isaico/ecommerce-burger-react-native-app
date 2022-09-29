@@ -25,7 +25,7 @@ export const getOrders = () => {
         orders,
       });
     } catch (error) {
-      console.log(error);
+      console.log(error,"orders esta vacio");
     }
   };
 };

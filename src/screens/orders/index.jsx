@@ -12,7 +12,6 @@ const Orders = () => {
     const orders = useSelector((state) => state.order.orders);
     const items = orders;
    
-
     const onHandleDelete = (id) => {
         dispatch(deleteOrder(id));
     };

@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
   },
   footer: {
     borderTopColor: colors.primary,
-    borderTopWidth: 1,
+    // borderTopWidth: 1,
     paddingVertical: 10,
   },
   buttonConfirm: {
@@ -51,4 +51,33 @@ export const styles = StyleSheet.create({
     fontFamily: "Lato-Bold",
     fontSize: 16,
   },
+  locationContainer:{
+    backgroundColor:colors.gray,
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderColor: colors.primary,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    justifyContent: "space-evenly",
+    paddingVertical:15
+  },
+  address:{
+    fontFamily: "Lato-Bold",
+    fontSize:16,
+    color:colors.text,
+    marginVertical: 10,
+    textAlign:"center",
+  },
+  textInput:{
+    marginTop: 10,
+    padding:5,
+    borderWidth: 1,
+    borderRadius: 5,
+  }
+
 });

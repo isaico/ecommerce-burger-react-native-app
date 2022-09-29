@@ -1,27 +1,27 @@
 export const CATEGORIES = [
   {
     id: 1,
-    name: "Harinas Puras",
-    color: "#8FBFE0",
+    name: "Hamburguesas Vegetarias",
+    color: "#11B79E",
   },
   {
     id: 2,
-    name: "Harinas Integrales",
-    color: "#7C77B9",
+    name: "Hamburguesas Veganas",
+    color: "#6E6FA6",
   },
   {
     id: 3,
-    name: "Harinas de Trigo",
-    color: "#1D8A99",
+    name: "Hamburguesas Carne",
+    color: "#E44A55",
   },
   {
     id: 4,
-    name: "Harinas de Maíz",
-    color: "#0BC9CD",
+    name: "Hamburguesas Pollo",
+    color: "#916D55",
   },
   {
     id: 5,
-    name: "Harinas de Arroz",
-    color: "#14FFF7",
+    name: "Hamburguesas Cerdo",
+    color: "#7892A7",
   },
 ];

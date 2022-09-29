@@ -13,8 +13,8 @@ import { CartItem } from '../../components';
 import { confirmCart, removeItem } from '../../store/actions/cart.actions';
 import { styles } from './styles';
 import { LocationSelector } from '../../components';
-// import { formatLocation } from '../../utils/formatLocation';
 import { URL_GEOCODING } from '../../utils/maps';
+import {colors} from '../../constants/colors'
 
 const Cart = () => {
     const dispatch = useDispatch();
@@ -69,9 +69,9 @@ const Cart = () => {
     const onHandleChangeLocation = () => {
         setChangeLocation(true);
     };
-    const changeAddress=(text)=>{
+    const changeAddress = (text) => {
         setAddress(text);
-    }
+    };
 
     return (
         <View style={styles.container}>
@@ -83,24 +83,26 @@ const Cart = () => {
                 />
             </View>
             <View>
-                {/* <Text></Text> */}
+                
                 <LocationSelector onLocation={onHandleLocation} />
-                <View style={styles}>
+                <View style={styles.locationContainer}>
                     {address ? (
                         <View style={styles}>
-                            <Text> direccion obtenida:{address}</Text>
+                            <Text style={styles.address}>
+                                Direccion obtenida: {address}
+                            </Text>
                             <Button
                                 style={styles.buttonConfirm}
                                 title="Agregar Manualmente"
                                 onPress={onHandleChangeLocation}
+                                color={colors.primaryDark}
                             />
                             {changeLocation ? (
-                                <View>
-                                    <TextInput
-                                        onChangeText={changeAddress}
-                                        placeholder={'address,city,state'}
-                                    ></TextInput>
-                                </View>
+                                <TextInput
+                                style={styles.textInput}
+                                    onChangeText={changeAddress}
+                                    placeholder={'Adress, City, State...'}
+                                />
                             ) : (
                                 <></>
                             )}

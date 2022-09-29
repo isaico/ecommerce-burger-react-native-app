@@ -1,6 +1,8 @@
 export const colors = {
-  primary: "#7C77B9",
-  secondary: "#8FBFE0",
+  primary: "#1ac0c6",
+  secondary: "#072448",
+  primaryDark: "#118084",
+  tertiary:"#ffcb00",
   text: "#212121",
   textLight: "#f5f5f5",
   background: "#ffffff",
@@ -10,4 +12,5 @@ export const colors = {
   gray: "#f5f5f5",
   placerholder: "#a0a0a0",
   error: "#ff0000",
+ 
 };
