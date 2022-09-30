@@ -1,3 +1,4 @@
+
 export const PRODUCTS = [
   {
     id: 1,
@@ -6,14 +7,17 @@ export const PRODUCTS = [
     price: 2,
     description: "Hamburguesas de Vegetales de estacion",
     weight: "300gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
   },
   {
     id: 2,
     category: 1,
     name: "Caja de 12 Burgers de Vegetales",
-    price: 1.5,
+    price: 4,
     description: "Hamburguesas de Vegetales de estacion",
     weight: "600gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ export const PRODUCTS = [
     price: 1.5,
     description: "Hamburguesas de Vegetales de estacion, sin huevo, ni queso",
     weight: "300gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ export const PRODUCTS = [
     price: 3,
     description: "Hamburguesas de Vegetales de estacion, sin huevo, ni queso",
     weight: "600gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ export const PRODUCTS = [
     price: 1.5,
     description: "Hamburguesas de carne vacuna de la mejor calidad",
     weight: "250gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ export const PRODUCTS = [
     price: 3,
     description: "Hamburguesas de carne de vacuna de la mejor calidad",
     weight: "500gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 7,
@@ -54,6 +66,8 @@ export const PRODUCTS = [
     price: 1.5,
     description: "Hamburguesas de carne de pollo de la mejor calidad",
     weight: "300gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ export const PRODUCTS = [
     price: 3,
     description: "Hamburguesas de carne de pollo de la mejor calidad",
     weight: "600gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 9,
@@ -70,6 +86,8 @@ export const PRODUCTS = [
     price: 2,
     description: "Hamburguesas de carne de cerdo de la mejor calidad",
     weight: "250gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
   {
     id: 10,
@@ -78,5 +96,7 @@ export const PRODUCTS = [
     price: 4,
     description: "Hamburguesas de carne de cerdo de la mejor calidad",
     weight: "500gr",
+    imageUri:"https://images.pexels.com/photos/1639565/pexels-photo-1639565.jpeg?cs=srgb&dl=pexels-valeria-boltneva-1639565.jpg&fm=jpg"
+
   },
 ];
