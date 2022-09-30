@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "newbreadshopapp",
-    "slug": "newbreadshopapp",
+    "name": "ecommerce-burgers",
+    "slug": "ecommerce-burgers",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
